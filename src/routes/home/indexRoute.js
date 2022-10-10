@@ -9,5 +9,7 @@ router.get('/', ctrl.callindex);
 router.get('/profile', ctrl.profile);
 
 router.get('/login', ctrl.login);
+router.post('/login', ctrl.process);
+
 
 module.exports = router;
