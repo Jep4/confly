@@ -1,0 +1,117 @@
+﻿body {
+    overflow: scroll;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+
+
+
+header {
+    margin: 10px;
+}
+
+
+
+#logo {
+    float: left;
+    width: 10%;
+}
+
+#name {
+    float: left;
+    width: 10%;
+}
+
+#searchBar {
+    width: 10%;
+}
+
+
+
+
+
+
+#main {
+    height: 500px;
+    margin: 10px;
+}
+
+#about {
+    float: left;
+}
+
+#findCont {
+    float: left;
+}
+
+#searchBar {
+}
+
+#subMenu{
+    text-align:center;
+}
+
+#profilePic{
+    text-align:center;
+    line-height:300px;
+}
+#profileName {
+    text-align: center;
+}
+
+#section2{
+    float:left;
+}
+#portBox {
+    width: 600px;
+    height: 300px;
+    margin: 10px;
+}
+
+#contest {
+    float: left;
+    margin: 10px;
+}
+
+#con1 {
+    float: left;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+}
+
+#con2 {
+    float: left;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+}
+
+#con3 {
+    float: left;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+}
+
+#con4 {
+    float: left;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+}
+
+#resources {
+    float: left;
+}
+
+#res {
+    float: right;
+    width: 500px;
+    height: 700px;
+}
+
+body {
+    padding: 10px;
+}

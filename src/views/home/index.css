@@ -1,0 +1,146 @@
+﻿body {
+    overflow: scroll;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+
+
+
+header{
+    margin:10px;
+}
+
+
+
+#logo{
+    float:left;
+    width:10%;
+}
+#name {
+    float: left;
+    width: 10%;
+}
+#searchBar {
+    width: 10%;
+}
+
+
+
+
+
+
+#main{
+    height:500px;
+    margin:10px;
+}
+
+
+
+#about{
+    float:left;
+}
+#findCont {
+    float: left;
+}
+#searchBar{
+}
+
+
+#category{
+
+}
+#catTitle{
+    
+}
+#box1 {
+    float: left;
+    width: 15%;
+    height: 70px;
+    margin: 10px;
+}
+#box2 {
+    float: left;
+    width: 15%;
+    height: 70px;
+    margin: 10px;
+}
+#box3 {
+    float: left;
+    width: 15%;
+    height: 70px;
+    margin: 10px;
+}
+#box4 {
+    float: left;
+    width: 15%;
+    height: 70px;
+    margin: 10px;
+}
+#box5 {
+    float:left;
+    width: 15%;
+    height: 70px;
+    margin: 10px;
+}
+#box6 {
+    width: 15%;
+    height: 70px;
+    margin: 10px;
+}
+
+#contest {
+    float:left;
+    margin: 10px;
+}
+#con1 {
+    float: left;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+}
+#con2 {
+    float: left;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+}
+#con3 {
+    float: left;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+}
+#con4 {
+    float: left;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+}
+
+#con5 {
+    float: left;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+}
+#con6 {
+    float: left;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+}
+
+#resources{
+    float:left;
+}
+
+#res{
+    float:right;
+    width:500px;
+    height:700px;
+}
+
+body {
+    padding:10px;
+}
