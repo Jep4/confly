@@ -16,16 +16,17 @@ function profile(req, res) {
     res.render("./home/profile")
 };
 
-function process(req, res) {
-    const id = req.id,
-        pw = req.pw;
+const process = {
+    login: (req, res) => {
+        const id = req.body.id,
+            pw = req.body.pw;
 
     if (users.id.include(id)) {
         const idx = users.id.indexOf(id);
         if (users.pw[idx] === pw) {
             return res.json({
                 success: true,
-            })
+            });
         }
     }
 
@@ -33,6 +34,7 @@ function process(req, res) {
         success: false,
         msg: "login failed",
     })
+    }
 };
 
 module.exports = {
