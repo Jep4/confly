@@ -9,11 +9,11 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.1",
-    "ejs": "^3.1.8"
+    "ejs": "^3.1.8",
+    "mysql": "^2.18.1"
   },
   "bin": {
     "somiproject": "bin/www.js"
   },
-  "devDependencies": {},
   "description": ""
 }
