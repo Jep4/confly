@@ -5,6 +5,8 @@
 const id = document.querySelector("#id");
 const pw = document.querySelector("#pw")
 const loginBtn = document.querySelector("#loginBtn")
+loginBtn.addEventListener("click", login);
+
 
 function login() {
     const req = {
@@ -18,7 +20,7 @@ function login() {
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringify(req),
+        body: JSON.stringify(req)
     }).then((res) => res.json())
         .then((res) => {
             if (res.success) {
@@ -30,5 +32,4 @@ function login() {
 }
 
 
-loginBtn.addEventListener("click", login);
 
