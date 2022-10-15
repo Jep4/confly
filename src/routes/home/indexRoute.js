@@ -11,6 +11,7 @@ router.get('/profile', ctrl.profile);
 router.get('/login', ctrl.login);
 
 router.get('/mysql', ctrl.mysql);
+router.get('/list', ctrl.list);
 router.post('/login', ctrl.process.login);
 
 

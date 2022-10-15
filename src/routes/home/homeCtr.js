@@ -1,5 +1,7 @@
 "use strict";
 var mysql2 = require('mysql2')
+var mysql_odbc = require("../db/db_conn")();
+var conn = mysql_odbc.init();
 
 const users = {
      id : ["som", "jun"],
@@ -25,6 +27,7 @@ function mysql(req, res) {
         port: 3306,
         user: 'confly',
         password: '1234',
+        database: 'test',
     });
 
     connection.connect(function (err) {
@@ -39,6 +42,14 @@ function mysql(req, res) {
     connection.end();
 };
 
+function list(req, res) {
+    var page = req.params.page;
+    var sql = "select idx, name, title, date_format(modidate,'%Y-%m-%d %H:%i:%s') modidate,date_format(regdate,'%Y-%m-%d %H:%i:%s') regdate,  hit from board";
+    conn.query(sql, function (err, rows) {
+        if (err) throw err;
+        res.render("./home/list", { title: "post list", rows: rows }        );
+    });
+}
 
 const process = {
     login: (req, res) => {
@@ -68,4 +79,5 @@ module.exports = {
     profile,
     process,
     mysql,
+    list,
 };
