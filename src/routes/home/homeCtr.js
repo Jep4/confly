@@ -1,4 +1,5 @@
 "use strict";
+var mysql2 = require('mysql2')
 
 const users = {
      id : ["som", "jun"],
@@ -16,6 +17,26 @@ function login(req, res) {
 
 function profile(req, res) {
     res.render("./home/profile")
+};
+
+function mysql(req, res) {
+    var connection = mysql2.createConnection({
+        host: 'localhost',
+        port: 3306,
+        user: 'confly',
+        password: '1234',
+    });
+
+    connection.connect(function (err) {
+        if (err) {
+            res.render("./home/mysql", { connect: 'failed', err: err });
+            console.error(err)
+            throw err;
+        } else {
+            res.render("./home/mysql", { connect: "success", err: "none" });
+        }
+    });
+    connection.end();
 };
 
 
@@ -46,4 +67,5 @@ module.exports = {
     login,
     profile,
     process,
+    mysql,
 };

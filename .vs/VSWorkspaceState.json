@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\bin",
+    "\\src",
+    "\\src\\public",
+    "\\src\\public\\js",
+    "\\src\\routes",
+    "\\src\\routes\\home",
+    "\\src\\views",
+    "\\src\\views\\home"
+  ],
+  "SelectedNode": "\\src\\routes\\home\\mysql.js",
+  "PreviewInSolutionExplorer": false
+}
