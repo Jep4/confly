@@ -3,14 +3,14 @@
     "",
     "\\bin",
     "\\src",
-    "\\src\\public",
     "\\src\\public\\js",
     "\\src\\routes",
     "\\src\\routes\\db",
     "\\src\\routes\\home",
     "\\src\\views",
-    "\\src\\views\\home"
+    "\\src\\views\\home",
+    "\\src\\views\\js"
   ],
-  "SelectedNode": "\\src\\routes\\home\\homeCtr.js",
+  "SelectedNode": "\\src\\views\\home\\index.ejs",
   "PreviewInSolutionExplorer": false
 }

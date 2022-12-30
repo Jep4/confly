@@ -1,21 +1,60 @@
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<script type="text/javascript" src="\views\js\login.js"></script>
 
 <head>
     <meta charset="utf-8" />
     <title></title>
 </head>
 <body>
+    <header>
+        <a href="/" id="logo" style="border:1px solid gray">
+            LOGO HERE
+        </a>
+        <div id="name">
+            name
+        </div>
+        <input id="searchBar" type="text" placeholder="Search..." />
+        
+        <a href="/login" id="gologin">
+            login
+        </a>
+    </header>
+    <div id="menu" style="border:1px solid gray">
+        <div id="about">
+            About |
+        </div>
+        <div id="findCont">
+            <button onmouseover="conDrop()" onmouseleave="removeDrop()" class="dropbtn">
+            Find Contest |
+            </button>
+            <div id="conDrop" class="dropdown-content">
+                <p>Category 1</p>
+                <p>Category 2</p>
+                <p>Category 3</p>
+            </div>
+        </div>
+        <div id="findResource">
+            Find resources |
+        </div>
+    </div>
+
     <div>
         <input id="id" type="text" placeholder="ID..." />
     </div>
     <div>
         <input id="pw" type="text" placeholder="PW..." />
     </div>
-    <button id="loginBtn">
+
+    <button id="loginBtn" onclick="gologin()">
         login
     </button>
+    
+
+    <a href="/register">
+        sign up
+    </a>
     <script src="/public/js/login.js"></script>
 </body>
 </html>

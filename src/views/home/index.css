@@ -24,6 +24,10 @@ footer{
 
 /*id*/
 
+#gologin{
+    float:right;
+}
+
 #logo{
     float:left;
     width:10%;

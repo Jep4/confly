@@ -9,6 +9,7 @@ router.get('/', ctrl.callindex);
 router.get('/profile', ctrl.profile);
 
 router.get('/login', ctrl.login);
+router.get('/register', ctrl.register);
 
 router.get('/mysql', ctrl.mysql);
 router.get('/list', ctrl.list);

@@ -3,6 +3,7 @@ var mysql2 = require('mysql2')
 var mysql_odbc = require("../db/db_conn")();
 var conn = mysql_odbc.init();
 
+
 const users = {
      id : ["som", "jun"],
      pw : ["1234", "1234"],
@@ -16,6 +17,9 @@ function login(req, res) {
     res.render("./home/login")
 };
 
+function register(req, res) {
+    res.render("./home/register")
+};
 function profile(req, res) {
     res.render("./home/profile")
 };
@@ -79,4 +83,5 @@ module.exports = {
     process,
     mysql,
     list,
+    register
 };
