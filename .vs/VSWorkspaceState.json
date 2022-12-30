@@ -6,10 +6,11 @@
     "\\src\\public",
     "\\src\\public\\js",
     "\\src\\routes",
+    "\\src\\routes\\db",
     "\\src\\routes\\home",
     "\\src\\views",
     "\\src\\views\\home"
   ],
-  "SelectedNode": "\\src\\routes\\home\\mysql.js",
+  "SelectedNode": "\\src\\routes\\home\\homeCtr.js",
   "PreviewInSolutionExplorer": false
 }

@@ -1,17 +1,28 @@
 ﻿body {
     overflow: scroll;
-    margin-left: 300px;
-    margin-right: 300px;
+    padding: 10px;
+}
+
+header {
+    width: 80%;
+    margin: 10px;
+}
+
+footer{
+    float:unset;
 }
 
 
-
-
-header{
-    margin:10px;
+/*class*/
+.dropdown-content{
+    display:none;
+}
+.show{
+    display:block;
 }
 
 
+/*id*/
 
 #logo{
     float:left;
@@ -27,12 +38,12 @@ header{
 
 
 
-
-
-
-#main{
-    height:500px;
-    margin:10px;
+#main {
+    width: 80%;
+    height: 500px;
+    margin: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 
@@ -47,11 +58,10 @@ header{
 }
 
 
-#category{
-
+#category {
+    margin-left: 10%;
 }
-#catTitle{
-    
+#catTitle {
 }
 #box1 {
     float: left;
@@ -90,8 +100,9 @@ header{
 }
 
 #contest {
-    float:left;
+    float: left;
     margin: 10px;
+    margin-left: 10%;
 }
 #con1 {
     float: left;
@@ -131,16 +142,12 @@ header{
     margin: 10px;
 }
 
-#resources{
-    float:left;
+#resources {
+    float: left;
+    margin-left: 10%;
 }
 
-#res{
-    float:right;
-    width:500px;
-    height:700px;
-}
-
-body {
-    padding:10px;
+#res {
+    width: 500px;
+    height: 650px;
 }

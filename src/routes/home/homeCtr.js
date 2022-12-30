@@ -8,7 +8,6 @@ const users = {
      pw : ["1234", "1234"],
 }
 
-
 function callindex(req, res) {
     res.render("./home/index")
 };

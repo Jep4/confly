@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <link type="text/css" rel="stylesheet" href="\views\home\index.css"">
+<script type="text/javascript" src="\views\js\index.js"></script>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
@@ -10,7 +11,7 @@
 </head>
 <body>
     <header>
-        <a id="logo" style="border:1px solid gray">
+        <a href="/" id="logo" style="border:1px solid gray">
             LOGO HERE
         </a>
         <div id="name">
@@ -23,7 +24,14 @@
             About |
         </div>
         <div id="findCont">
+            <button onmouseover="conDrop()" onmouseleave="removeDrop()" class="dropbtn">
             Find Contest |
+            </button>
+            <div id="conDrop" class="dropdown-content">
+                <p>Category 1</p>
+                <p>Category 2</p>
+                <p>Category 3</p>
+            </div>
         </div>
         <div id="findResource">
             Find resources |
