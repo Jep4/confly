@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<script type="text/javascript" src="\views\js\login.js"></script>
 
 <head>
     <meta charset="utf-8" />
     <title></title>
 </head>
+    
+    
 <body>
     <header>
         <a href="/" id="logo" style="border:1px solid gray">
@@ -39,22 +40,19 @@
             Find resources |
         </div>
     </div>
-
-    <div>
-        <input id="id" type="text" placeholder="ID..." />
-    </div>
-    <div>
-        <input id="pw" type="text" placeholder="PW..." />
-    </div>
-    <div>
-        <input id="nickname" type="text" placeholder="NICKNAME..." />
-    </div>
-
-    <button id="loginBtn" onclick="gologin()">
-        register
-    </button>
     
-
-    <script src="/public/js/login.js"></script>
+    <h1>Registration</h1>
+    
+    <input type="text" id="username"
+        placeholder="username"/>
+    <input type="password" id="password"
+        placeholder="password"/>
+    <input type="text" id="nickname"
+        placeholder="Nickname"/>
+    <button id="submitB">Submit</button>
+    
+    
+    <script src="/public/js/register.js"></script>
 </body>
+
 </html>

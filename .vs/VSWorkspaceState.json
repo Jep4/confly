@@ -1,8 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\bin",
     "\\src",
+    "\\src\\public",
     "\\src\\public\\js",
     "\\src\\routes",
     "\\src\\routes\\db",
@@ -11,6 +11,6 @@
     "\\src\\views\\home",
     "\\src\\views\\js"
   ],
-  "SelectedNode": "\\src\\views\\home\\index.ejs",
+  "SelectedNode": "\\src\\routes\\home\\homeCtr.js",
   "PreviewInSolutionExplorer": false
 }

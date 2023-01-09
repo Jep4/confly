@@ -14,6 +14,6 @@ router.get('/register', ctrl.register);
 router.get('/mysql', ctrl.mysql);
 router.get('/list', ctrl.list);
 router.post('/login', ctrl.process.login);
-
+router.post('/register', ctrl.process2.register);
 
 module.exports = router;

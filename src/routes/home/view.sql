@@ -1,2 +1,2 @@
 
-SELECT * FROM test.board;
+SELECT * FROM test.users;

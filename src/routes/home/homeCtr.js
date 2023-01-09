@@ -3,6 +3,10 @@ var mysql2 = require('mysql2')
 var mysql_odbc = require("../db/db_conn")();
 var conn = mysql_odbc.init();
 
+const express = require('express');
+const app = express();
+const bcrypt = require('bcrypt')
+
 
 const users = {
      id : ["som", "jun"],
@@ -46,11 +50,10 @@ function mysql(req, res) {
 };
 
 function list(req, res) {
-    var page = req.params.page;
-    var sql = "select idx, name, title, date_format(modidate,'%Y-%m-%d %H:%i:%s') modidate,date_format(regdate,'%Y-%m-%d %H:%i:%s') regdate,  hit from board";
+    var sql = "select id, pwd, nickname from users";
     conn.query(sql, function (err, rows) {
         if (err) throw err;
-        res.render("./home/list", { title: "post list", rows: rows }        );
+        res.render("./home/list", { title: "user list", rows: rows }        );
     });
 }
 
@@ -76,6 +79,25 @@ const process = {
     }
 };
 
+
+const process2 = {
+    register: (req, res) => {
+        const { id, pwd } = req.body
+
+
+        var sql = "INSERT INTO users (id, pwd, nickname) VALUES ('" + id + "'," + pwd + "'," + nickname + "')"
+        conn.query(sql, function (err, result) {
+            console.log("user record inserted")
+        })
+
+        return res.json({
+            msg: "register success",
+        })
+
+      
+    }
+};
+
 module.exports = {
     callindex,
     login,
@@ -83,5 +105,7 @@ module.exports = {
     process,
     mysql,
     list,
-    register
+    register,
+    process2
+
 };

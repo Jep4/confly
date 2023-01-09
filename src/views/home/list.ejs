@@ -4,30 +4,24 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>POST LIST</title>
+    <title>user list</title>
 </head>
 <body>
     <h1><%=title%></h1>
-    <a> write a post </a>
     <table border = "1">
         <tr>
-            <td> number </td>
-            <td> writer </td>
-            <td> title </td>
-            <td> views </td>
-            <td> modified date </td>
-            <td> posted date </td>
+            <td> username </td>
+            <td> password </td>
+            <td> nickname </td>
         </tr>
     <% for(var i = 0; i<rows.length; i++){ 
     var data=rows[i];%>
         <tr>
-            <td> <%=data.idx%> </td>
-            <td> <%=data.name%> </td>
-            <td> <%=data.title%> </td>
-            <td> <%=data.hit%> </td>
-            <td> <%=data.modidate%> </td>
-            <td> <%=data.regdate%> </td>
+            <td> <%=data.id%> </td>
+            <td> <%=data.pwd%> </td>
+            <td> <%=data.nickname%> </td>
         </tr>
         <%}%>
+        </table>
 </body>
 </html>
