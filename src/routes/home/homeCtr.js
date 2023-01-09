@@ -82,14 +82,15 @@ const process = {
 
 const process2 = {
     register: (req, res) => {
-        const { id, pwd } = req.body
+        const { id, pwd, nickname } = req.body
 
 
-        var sql = "INSERT INTO users (id, pwd, nickname) VALUES ('" + id + "'," + pwd + "'," + nickname + "')"
+        var sql = "INSERT INTO users (id, pwd, nickname) VALUES ('" + id + "','" + pwd + "','" + nickname + "')"
         conn.query(sql, function (err, result) {
+            if (err) throw err;
             console.log("user record inserted")
-        })
 
+        })
         return res.json({
             msg: "register success",
         })

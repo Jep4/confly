@@ -9,8 +9,8 @@ submitB.addEventListener("click", registerGo);
 
 function registerGo() {
     const req = {
-        username: username.value,
-        pw: password.value,
+        id: username.value,
+        pwd: password.value,
         nickname: nickname.value
     };
 
